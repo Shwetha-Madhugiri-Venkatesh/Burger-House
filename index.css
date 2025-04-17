@@ -114,8 +114,10 @@ body {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
 }
+
 
 .nav-list li a {
     font-size: 12px;
@@ -199,6 +201,30 @@ body {
     align-items: center;
     gap: 10px;
 }
+#logo-icon{
+    color: white;font-size: 25px;
+}
+.logo-text{
+    color: white;font-size: 25px;
+}
+.bottom-para{
+    color: white;width: 100%;height: 100%;
+}
+.company-name{
+    color: white;width: 100%;height: 100%;
+}
+#loc-icon{
+    color: white;font-size: 13px;
+}
+.location{
+    color: white;font-size: 13px;
+}
+#email-icon{
+    color: white;font-size: 13px;
+}
+.email-add{
+    color: white;font-size: 13px;word-break: break-all;
+}
 .image_left{
     position: absolute;
     width: 40%;
@@ -220,6 +246,9 @@ body {
     height: 15%;
     top: 4%;
     left: 4%;
+}
+.ico{
+    width: 10%;
 }
 .overlay1 h3{
     font-size: 20px;
@@ -243,7 +272,7 @@ body {
     position: absolute;
     width: 30%;
     height: 15%;
-    right: 10%;
+    right: 14%;
     top: 10%;
 }
 .image_bottom{
@@ -307,6 +336,9 @@ body {
     height: 50%;
     width: 100%;
     object-fit: fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .item-img img{
     width: 100%;
@@ -576,6 +608,9 @@ position: relative;
    .contacts-div{
     display: flex;flex-direction: row;gap: 5px;width: 100%;height: 50%;
    }
+   .email-div{
+    display: flex;flex-direction: row;gap: 5px;width: 100%;height: 50%;
+   }
    .icons{
     height: 40px;
     width: 200px;
@@ -586,8 +621,10 @@ position: relative;
     position: absolute;
     bottom: 5%;
     right: 2%;
+    flex-wrap: wrap;
    }
    #icon{
+    flex: 20%;
     color: blue;width: 100%;height: 100%;background-color: aliceblue;font-size: 20px;display: flex;align-items: center;justify-content: center;border-radius: 50% 50%;
    }
    .row-2 {
@@ -613,6 +650,20 @@ position: relative;
 .div-content{
     width: 50%;height: 100%;display: flex;flex-direction: row;align-items: center;justify-content: center;font-size:12px;
 }
+.header-content{
+    width: 95%;height: 90%;margin: 2.5% 2.5%;position: relative;
+}
+@media screen and (max-width:900px) {
+    .plate{
+        height: 30%;
+    }
+}
+@media screen and (max-width:800px) {
+    .ketchup{
+        height: 30%;
+        width: 15%;
+    }
+}
 @media screen and (max-width:580px){
     .header{
         height: 100%;
@@ -621,6 +672,7 @@ position: relative;
        top: 8%;
     }
     .nav{
+        left: 5%;
         top: 15%;
     }
     .image{
@@ -673,13 +725,13 @@ position: relative;
         margin: 0;
     }
     .item .item-img{
-        width: 60%;
+        width: 50%;
     }
     .bottom{
         height: 20%;
     }
     .content_4{
-        height:100%;
+        height:200%;
     }
     .form{
         width: 60%;
@@ -688,7 +740,9 @@ position: relative;
         left: 20%;
     }
     .text-content{
-        top: 2%;
+        width: 100%;
+        top: 1%;
+        left: 1%;
     }
     .text-content h3{
         font-size: 9px;
@@ -703,12 +757,12 @@ position: relative;
     }
     .cell{
         height: 40px;
-        flex: 40%;
+        flex: 50%;
     }
     .cell1{
         height: 40px;
         flex-direction: column;
-        flex: 40%;
+        flex: 50%;
     }
     .row-1,.row-2{
         height: auto;
@@ -777,7 +831,9 @@ position: relative;
         left: 2%;
     }
     .plate{
-        height: 15%;
+        height: 8%;
+        bottom: 0%;
+        width: 20%;
     }
     .logo-bottom{
         width: 100%;
@@ -799,5 +855,342 @@ position: relative;
     .bottom p{
         padding-left: 3%;
     }
-}
+    .burger{
+        height: 10%;
+        width: 30%;
+        left: -15%;
+    }
+    .title{
+        left: 0;
+    }
 
+}
+@media screen and (max-width:300px){
+    .header{
+        height: 100%;
+    }
+    .title{
+        width: 100%;
+        top: 50%;
+    }
+    .title p{
+        width: 90%;
+        height: 20%;
+    }
+    .title h1{
+        font-size: 20px;
+        height: 60%;
+    }
+    .title h3{
+        font-size: 20px;
+    }
+    .image{
+        height: 20%;
+        top: 80%;
+    }
+    .express_delivery{
+        top: 10%;
+    }
+    .nav{
+        top:25%;
+    }
+    .text1{
+        left: 5%;
+    }
+    .content_1{
+        height: 120%;
+    }
+    .top{
+        height: 80%;
+    }
+    .bottom{
+        height: 20%;
+    }
+    .bottom .block1{
+        width: 100%;
+    }
+    .bottom #bottom-p{
+        padding-bottom: 9%;
+    }
+    .logo-bottom{
+        width: 100%;
+    }
+    .ico{
+        width: 40%;
+    }
+    .content_2{
+        height: auto;
+    }
+    .item{
+        height: 35%;
+    }
+    .item .item-img{
+        height: 70%;
+    }
+    .item .item-img img{
+        height: 100px;
+        width: 60px
+    }
+    .item-content{
+        height: 30%;
+    }
+    .item-content h3{
+        font-size: 15px;
+    }
+    .item-content .para{
+        font-size: 13px;
+    }
+    .item .btn1{
+        width: 100%;
+        
+    }
+    .content_3{
+        height: 100%;
+    }
+    .inset{
+        height: 100%;
+        padding: 0;
+    }
+    .inset h3{
+        padding-top:6%;
+        font-size: 80%;
+    }
+    .inset h1{
+        font-size: 16px;
+    }
+    .inset p{
+        font-size: 13px;
+    }
+    .content_4{
+        height: 190%;
+        width: 100%;
+    }
+    .text-content{
+        width: 100%;
+        left: 0;
+        font-size: 15%;
+    }
+    .text-content h5{
+        font-size: 10px;
+    }
+    .burger{
+        top: 3%;
+    }
+    .ketchup{
+        height: 10%;
+        width: 30%;
+        left: -12%;
+    }
+    .cell,.cell1{
+        flex: 50%;
+    }
+    .plate{
+        height: 8%;
+        width: 60%;
+        bottom: 0%;
+    }
+    .div-content{
+        font-size:10px ;
+    }
+    .row-3{
+        flex-direction: column;
+    }
+    .btn{
+        width: 100%;
+        font-size: 10px;
+    }
+    .footer{
+        height: 100%;
+        width: 100%;
+    }
+    .logo-bottom{
+        width: 100%;
+        font-size: 10px;
+    }
+    .loc-icon{
+        width: 20;
+    }
+    .logo-text{
+        font-size: 15px;
+    }
+    .text-bottom{
+        width: 98%;
+        left: 5%;
+    }
+    .bottom-para,.email-add,.location{
+        font-size: 10px;
+    }
+    .contacts{
+        width: 100%;
+        left: 5%;
+    }
+    .icons{
+        width: 90%;
+        left: 5%;
+        height: 4%;
+    }
+    #icon{
+        font-size: 95%;
+    }
+    .company{
+        width: 100%;
+    }
+    .company-name{
+        font-size: 10px;
+    }
+    .offer .p1{
+        font-size: 14px;
+    }
+    .offer .p2{
+        font-size: 7px;
+    }
+    .offer #pre{
+        font-size: 6px;
+    }
+}
+@media screen and (max-width:298px){
+    .content_4{
+        height: 200%;
+    }
+    .form{
+        top: 3%;
+    }
+    .bottom-para{
+        width: 80%;
+    }
+    .title{
+        top: 60%;
+    }
+    .image{
+        bottom: 0%;
+    }
+    .content_1{
+        height: 100%;
+    }
+    .top{
+        height: 80%;
+    }
+    .bottom{
+        height: 20%;
+    }
+
+    .bottom #bottom-p{
+        height: 50%;
+       font-size: 8px;
+       margin-bottom: 19%;
+    }
+    .bottom h1 {
+        font-size: 10px;
+    }
+    .bottom .block1{
+        height: 20%;
+    }
+}
+@media screen and(max-width:93px){
+    .content_1,.content_2,.content_3,.content_4,.header,.footer{
+        height: auto;
+    }
+    .inset{
+        margin: 0;
+    }
+    .inset p 
+    {
+     
+        word-break: break-all;
+    }
+    .inset h1 {
+        
+        word-break: break-all;
+    }
+    .inset h3 {
+       
+        word-break: break-all;
+    }
+}
+@media screen and (max-width:111px){
+    .content_2,.content_3{
+        height: auto;
+    }
+    .express_delivery,.title h1,.title h3,
+    .nav-list li a ,
+    .title p ,
+    .item-content .para ,
+    .inset h3,
+    .inset h1,
+    .inset p,
+    .logo-text,
+    .overlay1 h2,
+    .overlay1 h3,
+    .text1 h3,
+    .text1 h2,
+    .text2 h3,
+    .text2 h2,
+    .logo p
+    {
+        word-break: break-all;
+    }
+    .logo-bottom{
+        flex-direction: column;
+    }
+    .icons{
+
+        width: 100%;
+    }
+    .footer{
+        height: 150%;
+    }
+    label,input{
+        font-size: 7px;
+    }
+    .div-content{
+        font-size: 5px;
+    }
+    .content_4{
+        height: 210%;
+    }
+    .form{
+        top: 5%;
+    }
+    .text-content h5{
+        font-size: 6px;
+    }
+    .btn button{
+        font-size: 7px;
+    }
+    .item .btn1 {
+        font-size: 7px;
+    }
+    .content_2 h3{
+        font-size: 10px;
+    }
+    .content_1{
+        height: 180%;
+    }
+    .overlay1 h3,.text1h3,
+    .text2 h3{
+        font-size: 8px;
+    }
+    .overlay1 h2,.text1 h2,
+    .text2 h2{
+        font-size: 10px;
+    }
+    .overlay1,.text2{
+       
+        width: 80%;
+    }
+    .header{
+        height: 150%;
+    }
+    .image{
+        top: 90%;
+    }
+    .logo{
+        flex-direction: column;
+    }
+    .express_delivery{
+        top: 15%;
+    }
+    .nav{
+        top: 30%;
+    }
+}
